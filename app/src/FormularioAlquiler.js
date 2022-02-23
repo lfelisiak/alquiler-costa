@@ -18,13 +18,13 @@ const FormularioAlquiler = () => {
 
                 <Row className="mb-3">
                     <Form.Group as={Col}>
-                    <Form.Label>Telefono</Form.Label>
-                    <Form.Control type="tel" placeholder="15-12345 678" />
+                    <Form.Label>Teléfono</Form.Label>
+                    <Form.Control type="tel" placeholder="15-1234 5678" />
                     </Form.Group>
 
                     <Form.Group as={Col}>
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" placeholder="escriba-su-email@email.com" />
+                    <Form.Label>Correo electrónico</Form.Label>
+                    <Form.Control type="email" placeholder="ejemplo@email.com" />
                     </Form.Group>
                 </Row>
 
@@ -49,9 +49,9 @@ const FormularioAlquiler = () => {
                     <Form.Group as={Col}>
                         <Form.Label>Departamento</Form.Label>
                         <Form.Select defaultValue="Choose...">
-                            <option>depto 1...</option>
-                            <option>depto 2...</option>
-                            <option>depto 3...</option>
+                            <option>depto 1</option>
+                            <option>depto 2</option>
+                            <option>depto 3</option>
                         </Form.Select>
                         </Form.Group>
 
@@ -64,7 +64,7 @@ const FormularioAlquiler = () => {
                     </Form.Group>
                 </Row>
 
-                <Button variant="outline-dark" type="submit">
+                <Button className="col-12 mt-2" variant="outline-dark" type="submit">
                     Reservar
                 </Button>
             </Form>
