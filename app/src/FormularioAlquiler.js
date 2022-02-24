@@ -1,13 +1,20 @@
+import { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import {Row, Button, Col} from 'react-bootstrap';
 const FormularioAlquiler = () => {
+    const [ nombre, setNombre ] = useState('');
+    const handleNombre = (nombre) => {
+        setNombre(nombre);
+    }
     return(
         <>
-            <Form className="m-3">
+            <Form className="m-3" onSubmit={ (e) => {
+                e.preventDefault();
+            }}>
                 <Row className="mb-3">
                     <Form.Group as={Col}>
                     <Form.Label>Nombre</Form.Label>
-                    <Form.Control type="text" placeholder="Nombre completo" />
+                    <Form.Control type="text" placeholder="Nombre completo" onChange={ (e) => handleNombre(e.target.value) } value={nombre}/>
                     </Form.Group>
 
                     <Form.Group as={Col}>
