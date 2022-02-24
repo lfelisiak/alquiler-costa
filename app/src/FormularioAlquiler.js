@@ -64,7 +64,7 @@ const FormularioAlquiler = () => {
                     </Form.Group>
                 </Row>
 
-                <Button className="col-12 mt-2" variant="outline-dark" type="submit">
+                <Button className="col-12 mt-2" variant="dark" type="submit">
                     Reservar
                 </Button>
             </Form>
